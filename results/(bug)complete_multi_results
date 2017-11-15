@@ -1,0 +1,57 @@
+ 	 	k-NN	SVM	k-means (k=nr_classes)	
+ 	avg_train_auc	0.5	0.5	0.50002	
+Full Dataset	avg_test_auc	0.5	0.5	0.50002	
+ 	max_test_auc	0.50007	0.5	0.50009	
+ 	avg_train_auc	0.5	0.5	0.49991	
+PCA	avg_test_auc	0.5	0.50001	0.49991	
+ 	max_test_auc	0.50007	0.50001	0.49994	
+ 	avg_train_auc	0.5	0.5	0.50004	
+LLE	avg_test_auc	0.5	0.50001	0.50004	
+ 	max_test_auc	0.50006	0.50001	0.50013	
+ 	avg_train_auc	0.5	0.5	0.5	
+Feature Corr	avg_test_auc	0.5	0.50001	0.5	
+ 	max_test_auc	0.50007	0.50001	0.50006	
+ 	avg_train_auc	0.5	0.5	0.50002	
+Class Corr	avg_test_auc	0.5	0.50001	0.50002	
+ 	max_test_auc	0.50007	0.50001	0.50014	
+ 	avg_train_auc	0.5	0.5	0.50002	
+AUC	avg_test_auc	0.5	0.50001	0.50002	
+ 	max_test_auc	0.50007	0.50001	0.50016	
+
+==================================
+
+Average test auc per class for classifier k-NN
+ 	C1	C2	C3	C4	C5	C6	
+Full Dataset	0.013158	0.21914	0.37052	0.60858	0.80509	0.98352	
+PCA	0.012345	0.22189	0.36823	0.60774	0.80563	0.98417	
+LLE	0.069191	0.18448	0.34718	0.65419	0.80584	0.93913	
+Feature Corr	0.022068	0.2221	0.36396	0.62571	0.79704	0.96913	
+Class Corr	0.10039	0.1838	0.32212	0.61528	0.80936	0.96906	
+AUC	0.025364	0.22865	0.34881	0.61931	0.803	0.97487	
+
+Average test auc per class for classifier SVM (c_range = -2:2:12; g_range = -8:2:2;)
+ 	C1	C2	C3	C4	C5	C6	
+Full Dataset	0.28574	0.35803	0.41352	0.54502	0.65094	0.74677	
+PCA	0.013329	0.21366	0.37901	0.60203	0.8011	0.99091	
+LLE	0.014781	0.22746	0.36563	0.62491	0.8046	0.96269	
+Feature Corr	0.0011377	0.22191	0.37842	0.60809	0.80107	0.98942	
+Class Corr	0.090958	0.21268	0.29639	0.60722	0.80915	0.98365	
+AUC	0.026636	0.22351	0.34991	0.61546	0.80643	0.97812	
+
+Average test auc per class for classifier k-means (k=nr_classes)
+ 	C1	C2	C3	C4	C5	C6	
+Full Dataset	0.31891	0.47094	0.37075	0.70183	0.54961	0.58808	
+PCA	0.4706	0.69853	0.48439	0.36813	0.35662	0.62117	
+LLE	0.44842	0.59195	0.62187	0.39532	0.44411	0.49857	
+Feature Corr	0.47126	0.44937	0.47798	0.51119	0.52054	0.56964	
+Class Corr	0.49958	0.43203	0.52037	0.60076	0.53566	0.41172	
+AUC	0.42302	0.45392	0.32465	0.73859	0.43009	0.62985	
+
+==================================
+Number of SV for each dataset: (dataset training size ~6327)
+Full Dataset (c=4, g=0.0625): 6326 (99.9842% of the training data)
+PCA (c=0.25, g=0.0039062): 3185 (50.3398% of the training data)
+LLE (c=0.25, g=0.0039062): 4420 (69.8593% of the training data)
+Feature Corr (c=0.25, g=0.0039062): 3949 (62.415% of the training data)
+Class Corr (c=1, g=0.0039062): 4027 (63.6479% of the training data)
+AUC (c=0.25, g=0.0039062): 4107 (64.9123% of the training data)

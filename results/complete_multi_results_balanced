@@ -1,0 +1,50 @@
+ 	 	k-NN	SVM	k-means (k=nr_classes)	
+ 	avg_train_auc	1	1	0.52682	
+Full Dataset	avg_test_auc	0.98058	0.99005	0.52682	
+ 	max_test_auc	0.98293	0.99005	0.57367	
+ 	avg_train_auc	1	1	0.51201	
+PCA	avg_test_auc	0.97575	0.9872	0.51201	
+ 	max_test_auc	0.9815	0.9872	0.56726	
+ 	avg_train_auc	1	0.98373	0.53145	
+LLE	avg_test_auc	0.94132	0.96053	0.53145	
+ 	max_test_auc	0.94703	0.96053	0.60002	
+ 	avg_train_auc	1	1	0.45295	
+Feature Corr	avg_test_auc	0.9505	0.98648	0.45295	
+ 	max_test_auc	0.9605	0.98648	0.52614	
+ 	avg_train_auc	1	0.98133	0.57559	
+Class Corr	avg_test_auc	0.93051	0.95841	0.57559	
+ 	max_test_auc	0.93347	0.95841	0.6153	
+
+==================================
+
+Average test auc per class for classifier k-NN
+ 	C1	C2	C3	C4	C5	C6	
+Full Dataset	0.99573	0.94801	0.96003	0.99637	0.99032	0.99303	
+PCA	0.99566	0.93635	0.94658	0.99652	0.9872	0.99218	
+LLE	0.96451	0.89366	0.9229	0.97909	0.92402	0.96373	
+Feature Corr	0.97475	0.92484	0.93357	0.98258	0.91871	0.96856	
+Class Corr	0.88142	0.85255	0.8663	0.99588	0.99288	0.99403	
+
+Average test auc per class for classifier SVM
+ 	C1	C2	C3	C4	C5	C6	
+Full Dataset	0.99255	0.97936	0.98328	0.99291	0.99574	0.99644	
+PCA	0.99291	0.97225	0.9726	0.99291	0.99609	0.99644	
+LLE	0.9968	0.92528	0.95162	0.96098	0.96656	0.96193	
+Feature Corr	0.99964	0.96976	0.96015	0.99433	0.99715	0.99787	
+Class Corr	0.93117	0.90856	0.91924	0.99752	0.99822	0.99573	
+
+Average test auc per class for classifier k-means (k=nr_classes)
+ 	C1	C2	C3	C4	C5	C6	
+Full Dataset	0.44026	0.57845	0.51561	0.54715	0.57021	0.50927	
+PCA	0.45937	0.5261	0.49648	0.5763	0.52353	0.49026	
+LLE	0.46584	0.56937	0.57598	0.43297	0.5668	0.57775	
+Feature Corr	0.48609	0.4242	0.46717	0.50977	0.40528	0.42521	
+Class Corr	0.71302	0.4441	0.53277	0.49859	0.62913	0.63593	
+
+==================================
+Number of SV for each dataset: (dataset training size ~6749)
+Full Dataset (c=64, g=0.0039062): 2750 (40.7468% of the training data)
+PCA (c=64, g=0.0039062): 2451 (36.3165% of the training data)
+LLE (c=16, g=0.0039062): 2728 (40.4208% of the training data)
+Feature Corr (c=64, g=0.0039062): 2616 (38.7613% of the training data)
+Class Corr (c=4096, g=0.015625): 1703 (25.2334% of the training data)
